@@ -75,6 +75,7 @@ install kits yourself unless asked.
 | Review, or splitting parallel work | `requesting-code-review`, `subagent-driven-development`, `dispatching-parallel-agents` |
 | Using an API or library that may have changed | `source-driven-development` (agent-skills) |
 | Anything platform-specific | The stack row in [docs/skills.md](docs/skills.md) |
+| Tests, CI pipeline, or PR test guard | [docs/quality.md](docs/quality.md) |
 | Area with no good external kit (bots, Tauri, Electron) | [docs/stack-notes.md](docs/stack-notes.md) |
 | Security-sensitive code (auth, payments, crypto, IPC) | `trailofbits` skills if installed |
 
@@ -95,3 +96,4 @@ All must be true before reporting done:
 - [ ] No decorative comments, step narration, vague TODOs, or dead code left behind.
 - [ ] No new secret, debug log, or commented-out block committed.
 - [ ] `docs/` updated if a contract, command, or rule above changed.
+- [ ] End-of-task report written from [docs/reports/TEMPLATE.md](docs/reports/TEMPLATE.md) to `docs/reports/YYYY-MM-DD-<short-slug>.md` (or inline `Evidence` in the reply for tiny/no-logic edits).

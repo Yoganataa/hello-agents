@@ -17,7 +17,9 @@ $Files = @(
   "docs/naming-and-copy.md",
   "docs/skills.md",
   "docs/stack-notes.md",
-  "docs/evals.md"
+  "docs/quality.md",
+  "docs/evals.md",
+  "docs/reports/TEMPLATE.md"
 )
 
 foreach ($Rel in $Files) {
@@ -34,4 +36,4 @@ foreach ($Rel in $Files) {
 }
 
 Write-Host ""
-Write-Host "Done. Next: fill in AGENTS.md and docs/architecture.md, and install any kits you want from docs/skills.md."
+Write-Host "Done. Next: fill in AGENTS.md, docs/product.md, and docs/architecture.md, set up CI from docs/quality.md, and install any kits you want from docs/skills.md."

@@ -44,11 +44,13 @@ To overwrite existing files:
 | `docs/naming-and-copy.md` | Naming conventions, code comment hygiene, and user-facing copy rules |
 | `docs/skills.md` | Curated catalog of install-on-demand skill kits per stack |
 | `docs/stack-notes.md` | Practical guardrails for stacks without a dedicated external kit (Telegram bots, Tauri v2, Electron, SQLite) |
-| `docs/evals.md` | Behavior test scenarios to check that an agent actually follows the rules |
+| `docs/quality.md` | Stack-specific test quality rules, CI pipeline stages, database testing, and PR test guard |
+| `docs/reports/TEMPLATE.md` | End-of-task report template capturing scope, command evidence, test diffs, and unverified gaps |
+| `docs/evals.md` | Report-audit rubric (cross-check real task reports against `git diff` and CI) plus optional synthetic spot-checks |
 
 ## What a prompt file can and can't do
 
-`AGENTS.md` lowers how often an agent drifts; it can't enforce anything. Pair it with CI that runs the tests, required PR review, and a human who reads what they approve. `docs/evals.md` is how you find out whether the rules hold for the agent and model you use.
+`AGENTS.md` lowers how often an agent drifts; it can't enforce anything. Pair it with [docs/quality.md](docs/quality.md) (CI pipeline, branch protection, and a PR test guard that catches deleted/skipped tests and empty catches), plus a human who reads what they approve. Rather than running manual evals every day, agents write a short report from [docs/reports/TEMPLATE.md](docs/reports/TEMPLATE.md) at the end of each task so you—or a fresh auditor session—can cross-check real work against `git diff` and CI using [docs/evals.md](docs/evals.md).
 
 ## Supported agents
 
