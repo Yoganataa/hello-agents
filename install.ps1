@@ -10,10 +10,14 @@ $BaseUrl = "https://raw.githubusercontent.com/$Repo/$Branch"
 
 $Files = @(
   "AGENTS.md",
+  "docs/product.md",
+  "docs/ideas.md",
+  "docs/decisions.md",
   "docs/architecture.md",
   "docs/naming-and-copy.md",
   "docs/skills.md",
-  "docs/stack-notes.md"
+  "docs/stack-notes.md",
+  "docs/evals.md"
 )
 
 foreach ($Rel in $Files) {

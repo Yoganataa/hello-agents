@@ -23,7 +23,8 @@ Repos checked to exist on 2026-11-24.
 | Kit | Install | Why |
 |-----|---------|-----|
 | Anti-slop | `npx skills add miqdadbadjuber/anti-slop` | Filters generic AI UI, copy, comments, mobile layout |
-| Engineering workflow | `npx skills add addyosmani/agent-skills` | Spec, planning, TDD, code review, quality gates |
+| Engineering workflow | `npx skills add addyosmani/agent-skills` | Idea refinement, spec, planning, TDD, source-driven development, review, shipping |
+| Agent discipline | `npx skills add obra/superpowers` | Brainstorming, plans, TDD, verification before completion, sub-agent delegation, parallel agents |
 | Security review | `npx skills add trailofbits/skills` | Audit-style checks for auth, crypto, unsafe input |
 
 ## Web

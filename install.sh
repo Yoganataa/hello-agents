@@ -41,10 +41,14 @@ install_file() {
 }
 
 install_file "AGENTS.md"
+install_file "docs/product.md"
+install_file "docs/ideas.md"
+install_file "docs/decisions.md"
 install_file "docs/architecture.md"
 install_file "docs/naming-and-copy.md"
 install_file "docs/skills.md"
 install_file "docs/stack-notes.md"
+install_file "docs/evals.md"
 
 echo ""
 echo "Done. Next: fill in AGENTS.md and docs/architecture.md, and install any kits you want from docs/skills.md."
